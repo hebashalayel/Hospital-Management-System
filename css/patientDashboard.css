@@ -1,0 +1,90 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #D1C5D0;
+    color: #4E414D;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header button {
+    background-color: #4E414D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #7C6D7A;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Profile section */
+.profile-section {
+    background: linear-gradient(135deg, #ffffff, #f8f8f8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text styling */
+.profile-section h2 {
+    margin-top: 0;
+    color: #4E414D;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+.profile-section p{
+    color: #7C6D7A;
+}
+.profile-section strong {
+    color: #4E414D; 
+}
+
+/* Buttons */
+.profile-section button {
+    background-color: #4E414D; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-section button:hover {
+    background-color: #7C6D7A; /
+}

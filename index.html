@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link href="img/logo.avif" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="img/m.png" alt="">
+          <h1 class="sitename">edical App</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero" class="active">Home</a></li>
+            <li><a href="index.html#about">Login</a></li>
+            <li><a href="index.html#features">Trainee Register</a></li>
+            <li><a href="index.html#services">Advisor Register</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>  
+      </div>
+    </header>
+    <main class="main">
+
+        <section id="hero" class="hero section">
+          <div class="hero-bg">
+            <img src="img/hero-bg-light.webp" alt="">
+          </div>
+          <div class="container text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <h1 data-aos="fade-up">Welcome to <span>Medical App</span></h1>
+              <p data-aos="fade-up" data-aos-delay="100">To maintain your health and ensure your safety<br></p>
+              <img src="img/medical.png" class="image img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+            </div>
+          </div>
+    
+        </section>
+
+        <footer id="footer" class="footer position-relative light-background">
+
+            <div class="container footer-top">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">Medical App</span>
+                  </a>
+                  <div class="footer-contact pt-3">
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                  </div>
+                  <div class="social-links d-flex mt-4">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                    <li><a href="#">Pharmaceuticals</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Heart & Cardiovascular</a></li>
+                    <li><a href="#">Neurosurgery</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                  <h4>Our App</h4>
+                  <p>Register in our app, get full care and stay safe!</p>
+                  <form action="register.php" method="post" class="php-email-form">
+                    <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Register"></div>
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your registration request has been sent. Thank you!</div>
+                  </form>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="container copyright text-center mt-4">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">Medical App</strong><span>All Rights Reserved</span></p>
+              <div class="credits">
+            
+              </div>
+            </div>
+          </footer>
+
+          <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="aos/aos.js"></script>
+  <script src="glightbox/js/glightbox.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+
+   <!-- Main JS File -->
+   <script src="javascript/main.js"></script>
+  
+</body> 
+</html>

@@ -1,0 +1,197 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #4F8EAA;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filter-form select {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.filter-form button {
+    padding: 10px 20px;
+    background-color: #4F8EAA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.filter-form button:hover {
+    background-color: #4F8EAA;
+}
+.drugs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.drugs-table th, .drugs-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.drugs-table th {
+    background-color: #4F8EAA;
+    color: #fff;
+    font-weight: bold;
+}
+.drugs-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.drugs-table tr:hover {
+    background-color: #f1f1f1;
+}
+.no-data-message {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.back-button {
+    display: inline-block;
+    margin: 20px auto 0;
+    padding: 12px 20px;
+    background-color: #777;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.back-button:hover {
+    background-color: #666;
+}
+@media (max-width: 768px) {
+    .filter-form select, .filter-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.reset-button {
+padding: 10px 20px;
+background-color: #dc3545;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-left: 10px;
+}
+.reset-button:hover {
+background-color: #c82333;
+}
+
+#message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+    overflow: hidden;
+}
+
+/* Alert Colors */
+.alert-info {
+    background-color: #e9f7fe;
+    color: #31708f;
+    border-left: 5px solid #31708f;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 5px solid #2e7d32;
+}
+
+.alert-warning {
+    background-color: #fff8e1;
+    color: #ff9800;
+    border-left: 5px solid #ff9800;
+}
+
+.alert-danger {
+    background-color: #fdecea;
+    color: #c62828;
+    border-left: 5px solid #c62828;
+}
+
+/* Close Button Styling */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+/* Hidden State */
+#message.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+}
+
+/* Loading Line Styling */
+.loading-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px; /* Adjust thickness as needed */
+    background-color: #31708f; /* Matches the info color */
+    animation: loading 3s linear forwards; /* Animates the width over 3 seconds */
+}
+
+/* Animation Keyframes for Loading Line */
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

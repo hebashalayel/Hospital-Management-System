@@ -1,0 +1,256 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    
+}
+
+body>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.wrapper {
+    max-height: 80vh; 
+    overflow-y: auto; 
+    width: 100%;
+    max-width: 700px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .05);
+    overflow: visible;
+}
+
+h1.title {
+    padding: 15px 0;
+    margin-left: 25px;
+    font-weight: bold;
+    color: #4F8EAA;
+}
+
+.form {
+    width: 100%;
+}
+
+.myform {
+    background: #E1EDF2;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px
+}
+
+.myform label {
+    display: block;
+    color: #83AFC3;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.myform input {
+    border: 0;
+    outline: 0;
+    height: 50px;
+    background: #FFF;
+    width: 100%;
+    border-radius: 5px;
+    color: #4F8EAA;
+    font-weight: 700;
+    font-size: .9rem;
+    text-indent: 15px;
+    border: 2px solid transparent;
+    transition: border 250ms;
+}
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.myform select {
+    border: 0;
+    outline: 0;
+    height: 50px;
+    background: #FFF;
+    width: 100%;
+    border-radius: 5px;
+    color: #4F8EAA;
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 0 40px 0 15px; 
+    border: 2px solid transparent;
+    transition: border 250ms;
+    appearance: none;
+}
+
+.select-wrapper i {
+    position: absolute;
+    top: 68%; 
+    right: 15px; 
+    transform: translateY(-50%); 
+    pointer-events: none; 
+    color: #83AFC3;
+    font-size: 1rem; 
+}
+
+
+.myform textarea {
+    border: 0;
+    outline: 0;
+    height: 100px;
+    background: #FFF;
+    width: 100%;
+    border-radius: 5px;
+    color: #4F8EAA !important;
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 0 40px 0 15px; 
+    padding: 15px; 
+    border: 2px solid transparent;
+    transition: border 250ms;    
+}
+.myform textarea:hover{
+    border-color: #fff; 
+    outline: none; 
+}
+
+.full-width input[type="date"] {
+    width: 100%;
+    padding-right: 40px; 
+    padding: 10px 15px; 
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: #FFF;
+    color: #4F8EAA;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.3s;
+}
+
+.full-width {
+    grid-column: -1 / 1
+}
+
+.button {
+    grid-column: -1 / 1;
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: .9rem;
+    cursor: pointer;
+    background: #4F8EAA;
+}
+
+.button button:hover {
+    background: #31708f;
+}
+#message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+    overflow: hidden;
+}
+
+/* Alert Colors */
+.alert-info {
+    background-color: #e9f7fe;
+    color: #31708f;
+    border-left: 5px solid #31708f;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 5px solid #2e7d32;
+}
+
+.alert-warning {
+    background-color: #fff8e1;
+    color: #ff9800;
+    border-left: 5px solid #ff9800;
+}
+
+.alert-danger {
+    background-color: #fdecea;
+    color: #c62828;
+    border-left: 5px solid #c62828;
+}
+
+/* Close Button Styling */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+/* Hidden State */
+#message.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+}
+
+/* Loading Line Styling */
+.loading-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px; /* Adjust thickness as needed */
+    background-color: #31708f; /* Matches the info color */
+    animation: loading 3s linear forwards; /* Animates the width over 3 seconds */
+}
+
+/* Animation Keyframes for Loading Line */
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
