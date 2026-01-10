@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'pharmacist') {
     header("Location: loginForm.php");
     exit();
 }
-
+   
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $isValid = true;
     //check name
