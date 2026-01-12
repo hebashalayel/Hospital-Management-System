@@ -3,6 +3,7 @@
     --heading-font: "Nunito",  sans-serif;
     --nav-font: "Inter",  sans-serif;
   }
+
   :root { 
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
     --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
