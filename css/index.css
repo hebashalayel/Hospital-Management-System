@@ -4,7 +4,7 @@
     --nav-font: "Inter",  sans-serif;
   }
 
-  :root { 
+  :root {
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
     --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
     --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
