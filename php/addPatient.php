@@ -5,6 +5,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'doctor') {
     header("Location: loginForm.php");
     exit();
 }
+
 require '../DB/config.php';
 // Initialize variables to keep form inputs
 $name = $age = $gender = $problem = $phoneNumber = $email = $entranceDate =$password= "";
